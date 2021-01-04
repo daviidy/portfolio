@@ -1,0 +1,77 @@
+/*
+    CSS Reset
+*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button,
+ul,
+li,
+a,
+p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+/* Global Setting */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.primary {
+  color: #6070FF !important;
+}
+
+.background-primary {
+  background: #EBEBFF;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.card {
+  border: 1px solid #DFE1E6;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.card-title {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-cta {
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #6070FF;
+}
+
+/* media queries */
+@media screen and (max-width: 599px) {
+
+}
