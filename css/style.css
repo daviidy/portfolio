@@ -42,8 +42,12 @@ p {
   color: #6070FF !important;
 }
 
-.background-primary {
+.background-primary-light {
   background: #EBEBFF;
+}
+
+.background-primary {
+  background: #6070FF;
 }
 
 .title {
@@ -51,7 +55,7 @@ p {
   line-height: 52px;
 }
 
-.card {
+.project {
   border: 1px solid #DFE1E6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -71,7 +75,55 @@ p {
   border: 1px solid #6070FF;
 }
 
-/* media queries */
-@media screen and (max-width: 599px) {
+.project i,
+.modal-body i {
+  font-size: 8px;
+  color: #C1C7D0;
+}
 
+.skill-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skill {
+  margin: 5px;
+}
+
+/* media queries */
+@media screen and (max-width: 575px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .jumbotron {
+    padding: 6rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    width: 25%;
+  }
+
+  .skill p {
+    font-size: 10px !important;
+  }
+
+  .contact {
+    width: 50%;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+  }
+
+  .jumbotron {
+    padding: 10rem;
+  }
 }
