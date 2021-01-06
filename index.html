@@ -25,16 +25,23 @@
   <header>
     <nav class="navbar navbar-expand-sm bg-white fixed-top">
       <h1 class="logo primary font-weight-bold">My logo</h1>
-      <i class="fas fa-bars primary d-sm-none"></i>
+      <div class="dropdown">
+        <i class="fas fa-bars primary d-sm-none dropdown-toggle" data-toggle="dropdown"></i>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#portfolio">Portfolio</a>
+          <a class="dropdown-item" href="#about">About</a>
+          <a class="dropdown-item" href="#contact">Contact</a>
+        </div>
+      </div>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -51,7 +58,7 @@
         you need coded, don’t hestiate to contact me.
       </p>
       <p class="text-uppercase primary mb-4">Let's connect</p>
-      <div class="d-inline-flex">
+      <div class="d-inline-flex flex-wrap">
         <i class="fab fa-twitter m-2"></i>
         <i class="fab fa-linkedin-in m-2"></i>
         <i class="fab fa-medium-m m-2"></i>
@@ -59,31 +66,35 @@
       </div>
     </div>
   </header>
-  <section class="container-fluid pt-5 pb-5 bg-light">
-    <div class="row">
+  <section id="portfolio" class="container-fluid pt-5 pb-5 bg-light">
+    <div class="row spacing">
       <div class="col-12 mb-5 p-5">
         <div class="project bg-white p-3 row">
           <img class="rounded img-fluid col-sm-6" src="https://david-yao.com/wp/wp-content/uploads/2020/08/2020-08-12-13_00_05-Apprenez-aupr%C3%A8s-des-meilleures-universit%C3%A9s-et-entreprises-dAfrique-_-Oschool.png" alt="oschoolelearning.com">
           <div class="card-body col-sm-6">
-            <h4 class="card-title font-weight-bold">Tonic</h4>
+            <h4 class="card-title font-weight-bold">E-learning platform</h4>
             <div class="d-inline-flex">
               <p class="text-uppercase m-2 font-weight-bold">
-                Facebook
+                Oschool E-elearning
               </p>
               <p class="m-2">
                 <i class="fas fa-circle"></i>
-                Full stack dev
+                Full Stack Dev
               </p>
               <p class="m-2">
                 <i class="fas fa-circle"></i>
-                2015
+                2016 - 2020
               </p>
             </div>
             <p class="card-text mb-3">
-              A daily selection of privately personalized reads;
-              no accounts or sign-ups required.
+              This project consisted of building a software
+              that allows companies to create their own
+              e-elarning platform. The client wanted
+              something similar like teachable.com.
             </p>
-            <div class="d-inline-flex mb-3">
+            <div class="d-inline-flex flex-wrap mb-3">
+              <span class="badge background-primary-light primary text-lowercase m-2">laravel</span>
+              <span class="badge background-primary-light primary text-lowercase m-2">phpunit</span>
               <span class="badge background-primary-light primary text-lowercase m-2">html</span>
               <span class="badge background-primary-light primary text-lowercase m-2">css</span>
               <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
@@ -100,19 +111,24 @@
         <div class="project bg-white p-3 row">
           <img class="rounded img-fluid col-sm-6" src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="oschoolelearning.com">
           <div class="card-body col-sm-6">
-            <h4 class="card-title font-weight-bold">Tonic</h4>
+            <h4 class="card-title font-weight-bold">Laundry web app</h4>
             <p class="card-text mb-3">
-              A daily selection of privately personalized reads;
-              no accounts or sign-ups required.
+              This project consisted of building a laundry
+              web app. People can schedule a pickup for their clothes.
+              The company will clean the clothes and send them back
+              to the user.
             </p>
-            <div class="d-inline-flex mb-3">
+            <div class="d-inline-flex flex-wrap mb-3">
+              <span class="badge background-primary-light primary text-lowercase m-2">symfony</span>
+              <span class="badge background-primary-light primary text-lowercase m-2">phpunit</span>
+              <span class="badge background-primary-light primary text-lowercase m-2">behat</span>
               <span class="badge background-primary-light primary text-lowercase m-2">html</span>
               <span class="badge background-primary-light primary text-lowercase m-2">css</span>
               <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
             </div>
             <div class="">
-              <button href="#" class="project-cta p-2">
-                <a href="#" class="primary">See Project</a>
+              <button href="#" class="project-cta p-2 primary" data-toggle="modal" data-target="#project2">
+                See Project
               </button>
             </div>
           </div>
@@ -127,7 +143,7 @@
               A daily selection of privately personalized reads;
               no accounts or sign-ups required.
             </p>
-            <div class="d-inline-flex mb-3">
+            <div class="d-inline-flex flex-wrap mb-3">
               <span class="badge background-primary-light primary text-lowercase m-2">html</span>
               <span class="badge background-primary-light primary text-lowercase m-2">css</span>
               <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
@@ -149,7 +165,7 @@
               A daily selection of privately personalized reads;
               no accounts or sign-ups required.
             </p>
-            <div class="d-inline-flex mb-3">
+            <div class="d-inline-flex flex-wrap mb-3">
               <span class="badge background-primary-light primary text-lowercase m-2">html</span>
               <span class="badge background-primary-light primary text-lowercase m-2">css</span>
               <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
@@ -164,8 +180,8 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid bg-white p-5">
-    <div class="row">
+  <section id="about" class="container-fluid bg-white p-5">
+    <div class="row spacing">
       <div class="col-12 col-sm-6 mb-4">
         <h1 class="title font-weight-bold mb-4">
           About Myself
@@ -179,7 +195,7 @@
           don’t hestiate to contact me.
         </p>
         <p class="text-uppercase primary mb-4">Let's connect</p>
-        <div class="d-inline-flex">
+        <div class="d-inline-flex flex-wrap">
           <i class="fab fa-twitter m-2"></i>
           <i class="fab fa-linkedin-in m-2"></i>
           <i class="fab fa-medium-m m-2"></i>
@@ -202,15 +218,15 @@
         </div>
         <div class="collapse mb-3" id="languages">
           <div class="d-sm-flex">
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
@@ -226,15 +242,15 @@
         </div>
         <div class="collapse mb-3" id="frameworks">
           <div class="d-sm-flex">
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
@@ -250,15 +266,15 @@
         </div>
         <div class="collapse mb-3" id="skills">
           <div class="d-sm-flex">
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
-            <div class="skill d-inline-flex d-sm-block rounded bg-light mt-3 align-items-center">
+            <div class="skill d-inline-flex flex-wrap d-sm-block rounded bg-light mt-3 align-items-center">
               <img width="50" class="m-2 img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="">
               <p class="m-2 font-weight-bold">Javascript</p>
             </div>
@@ -269,7 +285,7 @@
     </div>
   </section>
 
-  <section class="container-fluid background-primary p-5">
+  <section id="contact" class="container-fluid background-primary p-5">
     <div class="row m-sm-auto contact">
       <div class="col-12">
         <h1 class="title font-weight-bold mb-4 text-white text-center">
@@ -287,87 +303,156 @@
       </div>
 
       <div class="col-12">
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/Pqwxv5s4?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/OHP4sH6K?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
       </div>
     </div>
   </section>
 
 
   <div class="modal" id="project1">
-  <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        <div class="bg-white p-3 row">
-          <div class="col-12">
-            <h4 class="card-title font-weight-bold">Tonic</h4>
-            <div class="d-inline-flex">
-              <p class="text-uppercase m-2 font-weight-bold">
-                Facebook
-              </p>
-              <p class="m-2">
-                <i class="fas fa-circle"></i>
-                Full stack dev
-              </p>
-              <p class="m-2">
-                <i class="fas fa-circle"></i>
-                2015
-              </p>
-            </div>
-          </div>
-          <img class="rounded img-fluid col-12" src="https://david-yao.com/wp/wp-content/uploads/2020/08/2020-08-12-13_00_05-Apprenez-aupr%C3%A8s-des-meilleures-universit%C3%A9s-et-entreprises-dAfrique-_-Oschool.png" alt="oschoolelearning.com">
-          <div class="row">
-            <div class="col-8">
-              <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="col-4">
-              <div class="d-inline-flex mb-3 pb-3 border-bottom w-100">
-                <span class="badge background-primary-light primary text-lowercase m-2">html</span>
-                <span class="badge background-primary-light primary text-lowercase m-2">css</span>
-                <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="bg-white p-3 row">
+            <div class="col-12">
+              <h4 class="card-title font-weight-bold">E-learning platform</h4>
+              <div class="d-inline-flex">
+                <p class="text-uppercase m-2 font-weight-bold">
+                  Oschool E-learning
+                </p>
+                <p class="m-2">
+                  <i class="fas fa-circle"></i>
+                  Full Stack Dev
+                </p>
+                <p class="m-2">
+                  <i class="fas fa-circle"></i>
+                  2016-2020
+                </p>
               </div>
-              <div class="d-inline-flex justify-content-between">
-                <button href="#" class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
-                  See live
-                  <i class="fas fa-external-link-alt primary"></i>
-                </button>
-                <button href="#" class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
-                  See live
-                  <i class="fab fa-github primary"></i>
-                </button>
+            </div>
+            <img class="rounded img-fluid col-12" src="https://david-yao.com/wp/wp-content/uploads/2020/08/2020-08-12-13_00_05-Apprenez-aupr%C3%A8s-des-meilleures-universit%C3%A9s-et-entreprises-dAfrique-_-Oschool.png" alt="oschoolelearning.com">
+            <div class="row">
+              <div class="col-8">
+                <p>
+                  This project consisted of building a software
+                  that allows companies to create their own
+                  e-elarning platform. The client wanted
+                  something similar like teachable.com.
+                </p>
+              </div>
+              <div class="col-4">
+                <div class="d-inline-flex mb-3 pb-3 border-bottom w-100">
+                  <span class="badge background-primary-light primary text-lowercase m-2">html</span>
+                  <span class="badge background-primary-light primary text-lowercase m-2">css</span>
+                  <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
+                </div>
+                <div class="d-inline-flex justify-content-between">
+                  <button class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
+                    <a href="https://oschoolelearning.com" target="_blank">
+                      See live
+                    </a>
+                    <i class="fas fa-external-link-alt primary"></i>
+                  </button>
+                  <button href="#" class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
+                    <a href="https://github.com/daviidy/oschool" target="_blank">
+                      See source
+                    </a>
+                    <i class="fab fa-github primary"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
 
+      </div>
     </div>
   </div>
-</div>
+
+  <div class="modal" id="project2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="bg-white p-3 row">
+            <div class="col-12">
+              <h4 class="card-title font-weight-bold">Laundry web app</h4>
+              <div class="d-inline-flex">
+                <p class="text-uppercase m-2 font-weight-bold">
+                  Elavoo
+                </p>
+                <p class="m-2">
+                  <i class="fas fa-circle"></i>
+                  Full Stack Dev
+                </p>
+                <p class="m-2">
+                  <i class="fas fa-circle"></i>
+                  2016-2020
+                </p>
+              </div>
+            </div>
+            <img class="rounded img-fluid col-12" src="https://david-yao.com/wp/wp-content/uploads/2020/08/2020-08-12-13_00_05-Apprenez-aupr%C3%A8s-des-meilleures-universit%C3%A9s-et-entreprises-dAfrique-_-Oschool.png" alt="oschoolelearning.com">
+            <div class="row">
+              <div class="col-8">
+                <p>
+                  This project consisted of building a laundry
+                  web app. People can schedule a pickup for their clothes.
+                  The company will clean the clothes and send them back
+                  to the user.
+                </p>
+              </div>
+              <div class="col-4">
+                <div class="d-inline-flex mb-3 pb-3 border-bottom w-100">
+
+                  <span class="badge background-primary-light primary text-lowercase m-2">html</span>
+                  <span class="badge background-primary-light primary text-lowercase m-2">css</span>
+                  <span class="badge background-primary-light primary text-lowercase m-2">javascript</span>
+                </div>
+                <div class="d-inline-flex justify-content-between">
+                  <button class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
+                    <a href="https://elavoo.com/" target="_blank">
+                      See live
+                    </a>
+                    <i class="fas fa-external-link-alt primary"></i>
+                  </button>
+                  <button href="#" class="project-cta p-2 primary m-2" data-toggle="modal" data-target="#project1">
+                    <a href="https://github.com/daviidy/elavoo" target="_blank">
+                      See source
+                    </a>
+                    <i class="fab fa-github primary"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 </body>

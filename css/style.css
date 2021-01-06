@@ -91,6 +91,12 @@ p {
   margin: 5px;
 }
 
+.dropdown-menu {
+  position: absolute !important;
+  left: auto;
+  right: 0;
+}
+
 /* media queries */
 @media screen and (max-width: 575px) {
   .navbar-nav {
@@ -125,5 +131,9 @@ p {
 
   .jumbotron {
     padding: 10rem;
+  }
+
+  .spacing {
+    padding: 5rem;
   }
 }
