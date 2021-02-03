@@ -22,7 +22,7 @@ p {
   text-decoration: inherit;
   color: inherit;
   background: transparent;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* Global Setting */
@@ -95,6 +95,14 @@ p {
   position: absolute !important;
   left: auto;
   right: 0;
+}
+
+.modal-body .col-8 {
+  padding-left: 4rem;
+}
+
+.alinea {
+  padding-left: 2rem;
 }
 
 /* media queries */
